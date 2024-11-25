@@ -5,16 +5,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @media (max-width: 768px) {
-            .navbar a, .dropdown .dropbtn, .search-container {
+            .navbar a, .dropdown .dropbtn {
                 float: none;
                 display: block;
                 text-align: left;
             }
             .search-container {
-                padding: 10px;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding: 10px 0;
             }
-            .faculty-grid .faculty-member {
-                width: calc(50% - 10px);
+            .search-container input {
+                width: 70%;
+            }
+            .search-container button {
+                width: 20%;
             }
         }
         @media (max-width: 480px) {
@@ -26,7 +32,7 @@
 </head>
 <body class="bg-gray-100 font-sans">
     <div class="bg-orange-500 text-white p-4 text-center">
-        <img alt="Logo" class="inline-block align-middle" height="50" src="https://i.ibb.co/S674BPg/images.jpg" width="50"/>
+        <img alt="Logo of President Ramon Magsaysay State University" class="inline-block align-middle" height="50" src="https://i.ibb.co/S674BPg/images.jpg" width="50"/>
         <h1 class="inline-block text-2xl align-middle ml-2">President Ramon Magsaysay State University</h1>
     </div>
     <div class="bg-black text-white">
@@ -52,17 +58,17 @@
                 <a href="Extension.html" class="block px-4 py-2">Extension</a>
                 <a href="History.html" class="block px-4 py-2">History</a>
             </div>
-            <div class="search-container">
+            <div class="search-container flex items-center">
                 <input type="text" placeholder="Search.." class="p-2 rounded border border-gray-300"/>
                 <button type="submit" class="p-2 bg-white rounded"><i class="fa fa-search"></i></button>
             </div>
         </div>
     </div>
     <div class="banner">
-        <img alt="College Building" class="w-full h-auto" src="https://i.ibb.co/YpJT2w8/home-1.png"/>
+        <img alt="Front view of the College Building" class="w-full h-auto" src="https://i.ibb.co/YpJT2w8/home-1.png"/>
     </div>
     <div class="banner">
-        <img alt="Group of people" class="w-full h-auto" src="https://i.ibb.co/48xMgtn/home-2.png"/>
+        <img alt="Group of students and faculty members standing together" class="w-full h-auto" src="https://i.ibb.co/48xMgtn/home-2.png"/>
     </div>
     <div class="container mx-auto p-4">
         <div class="bg-white p-4 mb-4">
@@ -76,23 +82,23 @@
         <div class="bg-white p-4 mb-4">
             <h3 class="text-xl font-bold mb-2">Our Quality Policy</h3>
             <p>The President Ramon Magsaysay State University is committed to continually strive for excellence in instruction, research, extension and production to strengthen global competitiveness adhering to quality standards for the utmost satisfaction of its valued customers.</p>
-            <img alt="ISO 9001 Logo" class="w-48 h-auto mt-4" src="https://i.ibb.co/x3zspF1/home-3.png"/>
+            <img alt="ISO 9001 Certification Logo" class="w-48 h-auto mt-4" src="https://i.ibb.co/x3zspF1/home-3.png"/>
         </div>
     </div>
     <div class="container mx-auto p-4">
         <div class="bg-white p-4 mb-4">
             <h3 class="text-xl font-bold mb-2">BSME Department awards and demonstrates the Fish Crushing Machine to Laoag Kaunlaran Association</h3>
             <p>The BSME Department awards and demonstrates the Fish Crushing Machine to Laoag Kaunlaran Association - COOPERATIVE through the Regional Innovative Inclusive Cooperation Program between DTI, DOST, PRMSU and MSME Council on the 18th of October 2022. This is a realization of the objectives of TEAM-UP TUPENSINO PROGRAM realized with the THRIVE agenda of the college with the goal, "A single step from CO-OP, a thousand hands fed in the community through upscaling and upgrading livelihood activities of small and medium enterprises in the Province of Zambales."</p>
-            <img alt="BSME Department event" class="w-1/4 h-auto mt-4" src="https://i.ibb.co/P9ySnNV/home-4.png"/>
+            <img alt="BSME Department demonstrating the Fish Crushing Machine to Laoag Kaunlaran Association" class="w-1/4 h-auto mt-4" src="https://i.ibb.co/P9ySnNV/home-4.png"/>
         </div>
         <div class="bg-white p-4 mb-4">
             <h3 class="text-xl font-bold mb-2">COE conducts Orientation and Gender Sensitivity Training</h3>
             <p>The PRMSU College of Engineering conducted the 2nd Batch of Orientation and Gender and Development (GAD) / Gender Sensitivity Training (GST) Seminar for Freshmen at the Science and Engineering Laboratory Building (SELB) Annex on October 20, 2022 with speakers Engr. Ruel Bel Balicao and Engr. Cindy Dallas.</p>
-            <img alt="COE conducts Orientation and Gender Sensitivity Training" class="w-1/4 h-auto mt-4" src="https://i.ibb.co/ZWVDZcx/home-5.png"/>
+            <img alt="COE conducting Orientation and Gender Sensitivity Training" class="w-1/4 h-auto mt-4" src="https://i.ibb.co/ZWVDZcx/home-5.png"/>
         </div>
     </div>
     <div class="text-white p-4 text-center">
-        <img alt="PRMSU Logo" class="w-full h-auto" src="https://i.ibb.co/rbKM2Xq/image-2024-11-23-234411877.png"/>
+        <img alt="Logo of President Ramon Magsaysay State University" class="w-full h-auto" src="https://i.ibb.co/rbKM2Xq/image-2024-11-23-234411877.png"/>
     </div>
 </body>
 </html>
