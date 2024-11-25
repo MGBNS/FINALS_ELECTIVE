@@ -1,0 +1,426 @@
+<html>
+<head>
+    <title>PRMSU College of Engineering</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header img {
+            vertical-align: middle;
+        }
+        .header h1 {
+            display: inline;
+            font-size: 24px;
+            margin: 0;
+        }
+        .navbar {
+            background-color: black;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .search-container {
+            float: right;
+            padding: 14px 16px;
+        }
+        .search-container input[type="text"] {
+            padding: 6px;
+            margin-right: 10px;
+            font-size: 17px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-container button {
+            padding: 6px 10px;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .search-container button:hover {
+            background: #ccc;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section-title {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 20px;
+        }
+        .profile {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .profile p {
+            margin: 5px 0;
+        }
+        .profile .details {
+            flex: 1;
+        }
+        .faculty-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .faculty-grid .faculty-member {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            width: calc(25% - 20px);
+        }
+        .faculty-grid .faculty-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .faculty-grid .faculty-member p {
+            margin: 10px 0 0;
+        }
+        .nav {
+            background-color: black;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .breadcrumb {
+            padding: 10px 20px;
+            background-color: white;
+        }
+        .breadcrumb a {
+            color: red;
+            text-decoration: none;
+        }
+        .breadcrumb span {
+            color: black;
+        }
+        .main-content {
+            background-color: #ff6600;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .content h2 {
+            color: #ff6600;
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+        }
+        .content ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        .footer {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content ul ul {
+            padding-left: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img alt="Logo" height="50" src="https://i.ibb.co/S674BPg/images.jpg" width="50"/>
+        <h1>President Ramon Magsaysay State university</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Instruction 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Curricular-Offerings.html">Curricular Offerings</a>
+                <a href="Faculty.html">Faculty</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Research 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="BSCE.html">BSCE Researches</a>
+                <a href="BSCpE.html">BSCpE Researches</a>
+                <a href="BSEE.html">BSEE Researches</a>
+                <a href="BSME.html">BSME Researches</a>
+            </div>
+        </div> 
+        <a href="Extension.html">Extension</a>
+        <a href="History.html">History</a>
+        <div class="search-container">
+            <input type="text" placeholder="Search..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+  </div>
+  <div class="breadcrumb">
+   <a href="#">
+    Instruction
+   </a>
+   &gt;&gt;
+   <span>
+    Curricular Offerings
+   </span>
+  </div>
+  <div class="main-content">
+   <h2>
+    Curricular Offerings
+   </h2>
+  </div>
+  <div class="content">
+   <div class="department">
+    <h2>
+     Civil Engineering
+    </h2>
+    <ul>
+     <li>
+        <a href="https://drive.google.com/file/d/1ZH8c4FtWYCm8Nr4K_vpJQIwBj21ouwMF/view" target="_blank">
+            •CMO
+      </a>
+     </li>
+     <li>
+        •Curriculum
+        <ul>
+         <li>
+          <a href="https://drive.google.com/file/d/1dAxJiHzIfv6htUOxCNrbk-bxUfF7X28I/view" target="_blank">
+            ‣2022
+        </a>
+       </li>
+       <li>
+        <a href= "https://drive.google.com/file/d/1IDMuf4xRgCHvWchZGmHHCI8T6XDV2rI0/view" target="_blank">
+            ‣2019
+        </a>
+       </li>
+       <li>
+        <a href= "https://drive.google.com/file/d/1PiETznugHPxM_sfhCu5jz40QSoqpBSx0/view" target="_blank">
+            ‣2018 (STEM)
+        </a>
+       </li>
+       <li>
+        <a href= "https://drive.google.com/file/d/1NMIBRoesUtYFBcwrEBkWPnJ6aKAqDDMe/view" target="_blank">
+            ‣2018 (Non-STEM)
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+   <div class="department">
+    <h2>
+     Computer Engineering
+    </h2>
+    <ul>
+     <li>
+        <a href= "https://drive.google.com/file/d/1MfQptZCp0ntYegS9wuhrsBzaq0eQ36lb/view" target="_blank">
+            •CMO
+      </a>
+     </li>
+     <li>
+        •Curriculum
+      <ul>
+       <li>
+        <a href= "https://drive.google.com/file/d/1uoopTW6_3ilw7qkzFTO0VgObgS96TtPQ/view" target="_blank">
+            ‣2022
+        </a>
+       </li>
+       <li>
+        ‣2019
+        </a>
+       </li>
+       <li>
+        <a href= "https://drive.google.com/file/d/1gb9F1AjD0ZDIyK0rHltQg5Vzz0a2ia3z/view" target="_blank">
+            ‣2018
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+   <div class="department">
+    <h2>
+     Electrical Engineering
+    </h2>
+    <ul>
+     <li>
+        <a href= "https://drive.google.com/file/d/1qLqbyQsWhAR4IApHhksulj6FhU9msxt5/view" target="_blank">
+            •CMO
+      </a>
+     </li>
+     <li>
+        •Curriculum
+      <ul>
+       <li>
+        <a href= "https://drive.google.com/file/d/1L7vvkXEFR4IZ_-YJfMCr5oUjOJGyBand/view" target="_blank">
+            ‣2022
+        </a>
+       </li>
+       <li>
+        <a href= "https://drive.google.com/file/d/1LN2HKQoYfgk0vAALgU9VDPaRtPQ2iEhi/view" target="_blank">
+            ‣2019
+        </a>
+       </li>
+       <li>
+        <a href= "https://drive.google.com/file/d/1Mondhpb6XfCz4c6eiAIBlCaChTH7vofL/view" target="_blank">
+            ‣2018 (STEM)
+        </a>
+       </li>
+       <li>
+        <a href= "https://drive.google.com/file/d/13XBB9Q3Azof4-OJ1COD13ZPGTEaPl2VZ/view" target="_blank">
+            ‣2018 (Non-STEM)
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+   <div class="department">
+    <h2>
+     Mechanical Engineering
+    </h2>
+    <ul>
+     <li>
+        <a href= "https://drive.google.com/file/d/13MkQIMg18aMg15J5GcpQ22gxoi4E-WhN/view" target="_blank">
+            •CMO
+      </a>
+     </li>
+     <li>
+        •Curriculum
+      <ul>
+       <li>
+        <a href= "https://drive.google.com/file/d/1_ohlfVvqBD2BVIU3iI1xAJXe8tN67pxn/view" target="_blank">
+            ‣2022
+        </a>
+       </li>
+       <li>
+        <a href= "https://drive.google.com/file/d/1qIRVGwAu4GZJbLNw8PRsArWFI_y_DXBY/view" target="_blank">
+            ‣2019
+        </a>
+       </li>
+       <li>
+        <a href= "https://drive.google.com/file/d/1iPmxV6OHfDDlV5JZmDzfngqvjPDF-kfp/view" target="_blank">
+            ‣2018 (STEM)
+        </a>
+       </li>
+       <li>
+        <a href= "https://drive.google.com/file/d/1QWS1lT3bmBREKOYPhTT1IOw-kW2eI-r9/view" target="_blank">
+            ‣2018 (Non-STEM)
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+   <div class="department">
+    <h2>
+     Mining Engineering
+    </h2>
+    <ul>
+     <li>
+        <a href= "https://drive.google.com/file/d/1G80jfNY3p823SDnztj9GnFhS3KI8dwSe/view" target="_blank">
+            •CMO
+      </a>
+     </li>
+     <li>
+        •Curriculum
+      <ul>
+       <li>
+        ‣202x
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div class="footer">
+   <p>
+    PRMSU College of Engineering © 2023
+   </p>
+  </div>
+ </body>
+</html>

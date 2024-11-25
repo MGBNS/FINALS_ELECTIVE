@@ -1,0 +1,615 @@
+<html>
+<head>
+    <title>PRMSU College of Engineering</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header img {
+            vertical-align: middle;
+        }
+        .header h1 {
+            display: inline;
+            font-size: 24px;
+            margin: 0;
+        }
+        .navbar {
+            background-color: black;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .search-container {
+            float: right;
+            padding: 14px 16px;
+        }
+        .search-container input[type="text"] {
+            padding: 6px;
+            margin-right: 10px;
+            font-size: 17px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-container button {
+            padding: 6px 10px;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .search-container button:hover {
+            background: #ccc;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section-title {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 20px;
+        }
+        .profile {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .profile p {
+            margin: 5px 0;
+        }
+        .profile .details {
+            flex: 1;
+        }
+        .faculty-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .faculty-grid .faculty-member {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            width: calc(25% - 20px);
+        }
+        .faculty-grid .faculty-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .faculty-grid .faculty-member p {
+            margin: 10px 0 0;
+        }
+        .breadcrumb {
+            padding: 10px 20px;
+            background-color: white;
+        }
+        .breadcrumb a {
+            color: red;
+            text-decoration: none;
+        }
+        .breadcrumb span {
+            color: black;
+        }
+        .main-content {
+            background-color: #ff6600;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .content h2 {
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img alt="Logo" height="50" src="https://i.ibb.co/S674BPg/images.jpg" width="50"/>
+        <h1>President Ramon Magsaysay State university</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Instruction 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Curricular-Offerings.html">Curricular Offerings</a>
+                <a href="Faculty.html">Faculty</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Research 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="BSCE.html">BSCE Researches</a>
+                <a href="BSCpE.html">BSCpE Researches</a>
+                <a href="BSEE.html">BSEE Researches</a>
+                <a href="BSME.html">BSME Researches</a>
+            </div>
+        </div> 
+        <a href="Extension.html">Extension</a>
+        <a href="History.html">History</a>
+        <div class="search-container">
+            <input type="text" placeholder="Search..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+</div>
+<div class="breadcrumb">
+ <a href="#">
+  Instruction
+ </a>
+ &gt;&gt;
+ <span>
+  Faculty
+ </span>
+</div>
+<div class="main-content">
+ <h2>
+  Faculty
+ </h2>
+</div>
+    <div class="content">
+   <div class="section-title">
+    College Dean
+   </div>
+   <div class="profile">
+    <img alt="Dean Image" height="100" src="https://i.ibb.co/5cZ3PT7/GILBERT-D-DEBOMA-REE-M-Eng.jpg" width="100"/>
+    <div class="details">
+     <h2>
+      DR. GILBERT D. DEBOMA, MIT, PhD
+     </h2>
+     <p>
+      Dean, College of Engineering
+     </p>
+     <p>
+      Dr. Gilbert D. Deboma is the Dean of the College of Engineering. He has a Master of Information Technology and a PhD in Engineering. His research interests include software engineering, data science, and artificial intelligence. He has published numerous papers in international journals and conferences.
+     </p>
+    </div>
+   </div>
+   <div class="section-title">
+    Program Chairs
+   </div>
+   <div class="profile">
+    <img alt="Program Chair Image" height="100" src="https://i.ibb.co/WVwvkXw/FERDINAND-D-TABLIGAN-RCE-M-Eng.jpg" width="100"/>
+    <div class="details">
+     <h2>
+    FERDINAND D. TABLIGAN, RCE, M.Eng. 
+     </h2>
+     <p>
+      BS Civil Engineering (BSCE)
+     </p>
+     <p>
+        Contents to be published soon...
+     </p>
+    </div>
+   </div>
+   <div class="profile">
+    <img alt="Program Chair Image" height="100" src="https://i.ibb.co/tDJH6sr/MELOJEAN-C-MARAVE-LPT-MSIT.jpg" width="100"/>
+    <div class="details">
+     <h2>
+      MELOJEAN C. MARAVE, LPT, MSIT
+     </h2>
+     <p>
+      BS Computer Engineering (BSCpE)
+     </p>
+     <p>
+      Engr. Melojean C. Marave has an extensive educational background, including a Doctorate in Information Technology from the Technological Institute of the Philippines and a Doctor of Education Major in Educational Management from Ramon Magsaysay Technological University, Iba Campus. She holds a Master of Science in Information Technology from the Polytechnic University of the Philippines – Sta. Mesa, Manila. Additionally, she completed a Post-Baccalaureate Certificate in Professional Education at Ramon Magsaysay Technological University Main Campus Iba, Zambales, and a Trade Course in IT Course Design and Development from the National Computer Center, National Computer Institute, Diliman Q.C. Engr. Marave finished CISCO Certified Network Associate Exploration 1, 2, 3, and 4 modules from UP Information Technology Training Center, UP Diliman Q.C. She earned her Bachelor of Science in Computer Engineering in October 2001. Engr. Marave currently serves as the BS Computer Engineering Program Chairperson at PRMSU Iba, Zambales, and has been actively involved in various faculty and extension roles within the university, with a special highlight on community extension. She is a licensed professional teacher and holds professional memberships with Colleges and Universities in the Philippines and the Institute of Computer Engineers of the Philippines as a Professional Member. An Accreditor of the Accrediting Agency of Chartered Colleges and Universities in the Philippines (AACCUP) and Internal Auditor of the International Standard Organization (ISO). Additionally, she has contributed significantly to youth leadership programs and has received recognition for her outstanding contributions and leadership. 
+     </p>
+    </div>
+   </div>
+   <div class="profile">
+    <img alt="Program Chair Image" height="100" src="https://i.ibb.co/5cZ3PT7/GILBERT-D-DEBOMA-REE-M-Eng.jpg" width="100"/>
+    <div class="details">
+     <h2>
+      GILBERT D. DEBOMA, REE, M.Eng.
+     </h2>
+     <p>
+      BS Electrical Engineering (BSEE)
+     </p>
+     <p>
+      Engr Gilbert D. Deboma is a faculty of the College of Engineering for 24 years with an Academic Rank of Associate Professor V. He is a graduate of Bachelor of Science in Electrical Engineering at Technological Institute of the Philippines – Quezon City. He finished his Master of Science in Electronics Engineering at Andong National University – South Korea. He is currently taking up PhD in Agricultural Engineering at Central Luzon State University. Engr Deboma is an active member of the Institute of Integrated Electrical Engineers, Inc., the accredited professional organization of electrical practitioners of the Philippines.  He is the current dean of the College of Engineering and concurrent Program Chairperson of the Electrical Engineering Department.
+     </p>
+    </div>
+   </div>
+   <div class="profile">
+    <img alt="Program Chair Image" height="100" src="https://i.ibb.co/h8tJp7N/MARLON-JAMES-A-DEDICATORIA-RMEE-Ph-D.jpg" width="100"/>
+    <div class="details">
+     <h2>
+      MARLON JAMES A. DEDICATORIA, RMEE, Ph.D.
+     </h2>
+     <p>
+      BS Mechanical Engineering (BSME)
+     </p>
+     <p>
+        Dr. Marlon James A. Dedicatoria is a licensed mechanical engineer and currently serves as the Vice President for Research and Development, as well as the Chairperson of the Mechanical Engineering Program at President Ramon Magsaysay State University (PRMSU) in Iba, Zambales. With over ten years of teaching experience, he has been instructing professional courses within the Bachelor of Science in Mechanical Engineering (BSME) program at PRMSU's College of Engineering. Additionally, he holds a lecturing position at the university's graduate school, where he teaches mathematics courses.
+
+        Dr. Dedicatoria earned his Bachelor of Science degree in Mechanical Engineering from Ramon Magsaysay Technological University in 2006. Subsequently, he pursued his Master of Science in Mechanical Design and Systems Engineering at Andong National University, South Korea, graduating in 2010. He furthered his academic pursuits by completing his PhD in Mechanical Design and Systems Engineering from Andong National University in 2013. Following his doctoral studies, he served as a post-doctoral fellow at the same university's Materials Behavior Evaluation Laboratory under the guidance of Prof. Hyung-Seop Shin from 2013 to 2014.
+        
+        His research publications primarily focus on the electromechanical property evaluation of high-temperature superconductors. Presently, Dr. Dedicatoria holds the position of Professor 3 at PRMSU.
+     </p>
+    </div>
+   </div>
+   <div class="profile">
+    <img alt="Program Chair Image" height="100" src="https://i.ibb.co/hYfbNd8/DOROTHY-JOYCE-SOLPICO-DESIERTO.jpg" width="100"/>
+    <div class="details">
+     <h2>
+      DOROTHY JOYCE SOLPICO DESIERTO
+     </h2>
+     <p>
+      BS Mining Engineering (BSEM)
+     </p>
+     <p>
+        Contents to be published soon...
+     </p>
+    </div>
+   </div>
+   <div class="section-title">
+    Faculty Members
+   </div>
+   <div class="content">
+   <div class="section-title">
+   Civil Engineering
+   </div>
+   <div class="faculty-grid">
+    <div class="faculty-member">
+     <img alt="Faculty Member 1" height="100" src="https://i.ibb.co/p1rHn6s/Engr-RONEL-E-ROMERO.jpg" width="100"/>
+     <p>
+        Engr.  RONEL E. ROMERO
+     </p>
+    </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/BV7VVgJ/Engr-JEMAR-DALUSONG.jpg" width="100"/>
+        <p>
+        Engr. JEMAR DALUSONG
+        </p>
+   </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/56zwgVp/Engr-RAYMOND-ARAMAY.jpg" width="100"/>
+        <p>
+        Engr.  RAYMOND ARAMAY
+        </p>
+   </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/0KqxdQD/Engr-ABRAHAM-ANTONIO.png" width="100"/>
+        <p>
+        Engr. ABRAHAM ANTONIO
+        </p>
+   </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/L8dknm8/Engr-MA-THEREZA-VICHO.jpg" width="100"/>
+        <p>
+        Engr. MA. THEREZA VICHO
+        </p>
+   </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/RHyBsq8/Engr-VICTOR-D-VICHO.jpg" width="100"/>
+        <p>
+        Engr. VICTOR D. VICHO
+        </p>
+   </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/Wz5t0LL/Engr-ELENA-LYN-TOMBALE.jpg" width="100"/>
+        <p>
+        Engr. ELENA LYN TOMBALE
+        </p>
+   </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/ChDwQyG/Engr-RYV-ANTHONY-BISQUERA.png" width="100"/>
+        <p>
+        Engr. RYV ANTHONY BISQUERA
+        </p>
+   </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/drPRcVj/Engr-JOVEN-MANANGAN.png" width="100"/>
+        <p>
+        Engr.  JOVEN MANANGAN
+        </p>
+   </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/Xb4Ccmj/Engr-ELOISA-ROMULO.png" width="100"/>
+        <p>
+        Engr. ELOISA ROMULO
+        </p>
+   </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/D9wgxhF/Engr-MARKO-ANTONIO-FERNANDEZ.jpg" width="100"/>
+        <p>
+        Engr. MARKO ANTONIO FERNANDEZ
+        </p>
+   </div>
+    <div class="faculty-member">
+        <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/rZnCDnc/Engr-ZENDREE-ARAMAY.png" width="100"/>
+        <p>
+        Engr.  ZENDREE ARAMAY
+        </p>
+   </div>
+   </div>
+   <div class="section-title">
+   Computer Engineering
+</div>
+<div class="faculty-grid">
+ <div class="faculty-member">
+  <img alt="Faculty Member 1" height="100" src="https://i.ibb.co/gPkp587/Engr-RICKY-S-BARRERA.png" width="100"/>
+  <p>
+        Engr. RICKY S. BARRERA
+  </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/PT5B4zv/Engr-BRYAN-CARLOS-B-ACAIN.png" width="100"/>
+     <p>
+        Engr. BRYAN CARLOS B. ACAIN
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/sw3kFFk/Engr-OLIVER-A-SABADO-JR.png" width="100"/>
+     <p>
+        Engr. OLIVER A. SABADO, JR.
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/QjJdqpd/Engr-DIONISIO-M-MARTIN-JR.jpg" width="100"/>
+     <p>
+        Engr. DIONISIO M. MARTIN, JR.
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/NT2spHV/Engr-FROILAN-G-CANTILLO.png"  width="100"/>
+     <p>
+        Engr. FROILAN G. CANTILLO
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/QNJjdXZ/Engr-ALLAN-JAY-L-MORILLO.png" width="100"/>
+     <p>
+        Engr. ALLAN JAY L. MORILLO
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/ZhTZHLj/Engr-DENNIZE-JIANA-R-BASILIO.png" width="100"/>
+     <p>
+        Engr. DENNIZE JIANA R. BASILIO
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/P6MLHMN/Engr-KIRK-LEE-P-LEOMO.png" width="100"/>
+     <p>
+        Engr. KIRK LEE P. LEOMO
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/r6K7Nmc/Engr-MARTEEN-BERAVON-REMOLACIO.png" width="100"/>
+     <p>
+        Engr. MARTEEN BERAVON REMOLACIO
+     </p>
+        </div>
+   </div>
+   <div class="section-title">
+   Electrical Engineering
+</div>
+<div class="faculty-grid">
+ <div class="faculty-member">
+  <img alt="Faculty Member 1" height="100" src="https://i.ibb.co/Xj83WL7/Engr-MARK-LESTER-PARALLAG.png" width="100"/>
+  <p>
+        Engr. MARK LESTER PARALLAG
+  </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/GPpHzV1/Engr-DORIS-H-MARQUEZ.png" width="100"/>
+     <p>
+        Engr. DORIS H. MARQUEZ
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/7WbxDDw/Engr-SENATO-ORIANZA.png" width="100"/>
+     <p>
+        Engr. SENATO ORIANZA
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/tBvtZGM/Engr-CHRISTIAN-MARAFINA.png" width="100"/>
+     <p>
+        Engr. CHRISTIAN MARAFINA
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/LzkrkD1/Engr-FERNAN-EDARAD.png" width="100"/>
+     <p>
+        Engr. FERNAN EDARAD
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/bzbVGCQ/Engr-RUE-LEI-BALICACO.png"  width="100"/>
+     <p>
+        Engr. RUE LEI BALICACO
+     </p>
+    </div>
+   </div>
+   <div class="section-title">
+   Mechanical Engineering
+</div>
+<div class="faculty-grid">
+ <div class="faculty-member">
+  <img alt="Faculty Member 1" height="100" src="https://i.ibb.co/bXGxHLY/Engr-Ma-Karla-Jessica-Bautista.jpg" width="100"/>
+  <p>
+        Engr.  Ma. Karla Jessica Bautista
+  </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/8BCvYxS/Engr-JASPER-ANTHONY-CUEVAS.png" width="100"/>
+     <p>
+        Engr. JASPER ANTHONY CUEVAS
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/ydVK2gb/Engr-MICHAEL-ROMUALDO.png" width="100"/>
+     <p>
+        Engr. MICHAEL ROMUALDO
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/r5PH8q9/Engr-NHOELLE-PADUA.png"  width="100"/>
+     <p>
+        Engr. NHOELLE PADUA
+     </p>
+   </div>
+   </div>
+   <div class="section-title">
+    Allied and General Education
+</div>
+<div class="faculty-grid">
+ <div class="faculty-member">
+  <img alt="Faculty Member 1" height="100" src="https://i.ibb.co/SyhPtDJ/Engr-MELISSA-M-EBUE.png" width="100"/>
+  <p>
+    Engr. MELISSA M. EBUE
+  </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/g6fCg7J/Engr-CLARISSE-HOPE-M-RICO.png" width="100"/>
+     <p>
+        Engr. CLARISSE HOPE M. RICO
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/Rj7y7NX/Dr-EMELYN-E-BUGAYONG.png" width="100"/>
+     <p>
+        Dr. EMELYN E. BUGAYONG
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/fDd40f2/Engr-CINDY-DULLAS.png"  width="100"/>
+     <p>
+        Engr. CINDY DULLAS
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/kBjTdrv/Dr-EDNA-PUNZALAN.png" width="100"/>
+     <p>
+        Dr. EDNA PUNZALAN
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/F4rFDD2/Ms-JANE-D-DANILA.png" width="100"/>
+     <p>
+        Ms. JANE D. DANILA
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/3TnFTkv/Mr-LUCIANO-MEDRANO.png" width="100"/>
+     <p>
+        Mr. LUCIANO MEDRANO
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/g7SZH4c/Ms-APRIL-BESA.png" width="100"/>
+     <p>
+        Ms. APRIL BESA
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/2Wq3WXP/Ms-SANTOS-MADELLE.jpg" width="100"/>
+     <p>
+        Ms. SANTOS, MADELLE
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/WKkLTwX/Ms-MONICA-PARANGAT.png" width="100"/>
+     <p>
+        Ms. MONICA PARANGAT
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/mcFh7tn/Ms-KAREN-QUITORIANO.png" width="100"/>
+     <p>
+        Ms. KAREN QUITORIANO
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/MV0KP0X/Ms-JIO-ERIKA-PELINIO.png" width="100"/>
+     <p>
+        Ms. JIO ERIKA PELINIO
+     </p>
+ </div>
+ <div class="faculty-member">
+     <img alt="Faculty Member 2" height="100" src="https://i.ibb.co/D8VTCF6/Ms-MAE-JOYCE-VELARDE.jpg" width="100"/>
+     <p>
+        Ms. MAE JOYCE VELARDE
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
