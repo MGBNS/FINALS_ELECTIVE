@@ -2,273 +2,97 @@
 <head>
     <title>PRMSU College of Engineering</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .header {
-            background-color: #ff6600;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .header img {
-            vertical-align: middle;
-        }
-        .header h1 {
-            display: inline;
-            font-size: 24px;
-            margin: 0;
-        }
-        .navbar {
-            background-color: black;
-            overflow: hidden;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: #ddd;
-            color: black;
-        }
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-        .dropdown .dropbtn {
-            font-size: 16px;  
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: black;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            float: none;
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        .dropdown-content a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .search-container {
-            float: right;
-            padding: 14px 16px;
-        }
-        .search-container input[type="text"] {
-            padding: 6px;
-            margin-right: 10px;
-            font-size: 17px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .search-container button {
-            padding: 6px 10px;
-            background: #fff;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        .search-container button:hover {
-            background: #ccc;
-        }
-        .content {
-            padding: 20px;
-        }
-        .section-title {
-            background-color: #ff6600;
-            color: white;
-            padding: 10px;
-            margin: 20px 0;
-            font-size: 20px;
-        }
-        .profile {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-        }
-        .profile img {
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        .profile h2 {
-            margin: 0;
-            font-size: 18px;
-        }
-        .profile p {
-            margin: 5px 0;
-        }
-        .profile .details {
-            flex: 1;
-        }
-        .faculty-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .faculty-grid .faculty-member {
-            background-color: white;
-            padding: 10px;
-            text-align: center;
-            width: calc(25% - 20px);
-        }
-        .faculty-grid .faculty-member img {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
-        .faculty-grid .faculty-member p {
-            margin: 10px 0 0;
-        }
-        .content ul ul {
-            padding-left: 20px; 
-        }
-        .footer {
-            background-color: white;
-            padding: 20px;
-            text-align: center;
+        @media (max-width: 768px) {
+            .navbar a, .dropdown .dropbtn, .search-container {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .search-container {
+                padding: 10px;
+            }
+            .faculty-grid .faculty-member {
+                width: 100%;
+            }
         }
     </style>
 </head>
-<body>
-    <div class="header">
-        <img alt="Logo" height="50" src="https://i.ibb.co/S674BPg/images.jpg" width="50"/>
-        <h1>President Ramon Magsaysay State university</h1>
+<body class="bg-gray-100">
+    <div class="header bg-orange-500 text-white text-center py-4">
+        <img alt="Logo" height="50" src="https://i.ibb.co/S674BPg/images.jpg" width="50" class="inline-block"/>
+        <h1 class="inline-block text-2xl">President Ramon Magsaysay State University</h1>
     </div>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn">Instruction 
+    <div class="navbar bg-black text-white flex flex-wrap">
+        <a href="index.html" class="block py-4 px-6 hover:bg-gray-300 hover:text-black">Home</a>
+        <div class="dropdown inline-block relative">
+            <button class="dropbtn py-4 px-6 hover:bg-gray-300 hover:text-black">Instruction 
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <a href="Curricular-Offerings.html">Curricular Offerings</a>
-                <a href="Faculty.html">Faculty</a>
+            <div class="dropdown-content absolute hidden bg-black text-white">
+                <a href="Curricular-Offerings.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">Curricular Offerings</a>
+                <a href="Faculty.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">Faculty</a>
             </div>
         </div> 
-        <div class="dropdown">
-            <button class="dropbtn">Research 
+        <div class="dropdown inline-block relative">
+            <button class="dropbtn py-4 px-6 hover:bg-gray-300 hover:text-black">Research 
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <a href="BSCE.html">BSCE Researches</a>
-                <a href="BSCpE.html">BSCpE Researches</a>
-                <a href="BSEE.html">BSEE Researches</a>
-                <a href="BSME.html">BSME Researches</a>
+            <div class="dropdown-content absolute hidden bg-black text-white">
+                <a href="BSCE.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">BSCE Researches</a>
+                <a href="BSCpE.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">BSCpE Researches</a>
+                <a href="BSEE.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">BSEE Researches</a>
+                <a href="BSME.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">BSME Researches</a>
             </div>
         </div> 
-        <a href="Extension.html">Extension</a>
-        <a href="History.html">History</a>
-        <div class="search-container">
-            <input type="text" placeholder="Search..">
-            <button type="submit"><i class="fa fa-search"></i></button>
+        <a href="Extension.html" class="block py-4 px-6 hover:bg-gray-300 hover:text-black">Extension</a>
+        <a href="History.html" class="block py-4 px-6 hover:bg-gray-300 hover:text-black">History</a>
+        <div class="search-container ml-auto py-4 px-6">
+            <input type="text" placeholder="Search.." class="p-2 border border-gray-300 rounded">
+            <button type="submit" class="p-2 bg-white border border-gray-300 rounded hover:bg-gray-300"><i class="fa fa-search"></i></button>
         </div>
-    </nav>
-</div>
+    </div>
 
-<div class="main-content">
-    <h2>
-     The PRMSU College of Engineering through the years...
-    </h2>
-    <img alt="The Science and Engineering Laboratory Building (SELB)" height="400" src="https://i.ibb.co/Pj8pqYJ/image-2024-11-24-133002017.png" width="1500"/>
-    <p>
-     The Science and Engineering Laboratory Building (SELB)
-    </p>
-   </div>
-   <div class="departments">
-    <div class="department">
-        <h3>
-            <ul>
-            BACHELOR OF SCIENCE IN CIVIL ENGINEERING
-             </a>
-           </ul>
-           </h3>
-     <ul>
-        The Bachelor of Science in Civil Engineering Program was first proposed to be offered in Botolan Campus under the Self-Liquidating Program Scheme in early 2002 under the leadership of President Rolando R. Rosete. The RMTU Board of Regents approved the proposal in early 2003 but only as back subjects in the summer as the issue on the status of facilities and faculty to handle the program in Botolan Campus. The BSCE program started in the first semester of the school year 2003-2004, under the Institute of Evening Opportunity Programs with Prof. Cecilia A. Santiago as the dean and the close coordination with Engr. Liza M. Almenia, the dean of the College of Engineering and Architecture.
-         </a>
-       </ul>
-       <ul>
-        BSCE had its first batch graduate in March 2008 with seventy percent passing rate in the board examination. In 2010, the Board of Regents and the DBM approved its transfer to CEA as one of the RMTU regular programs. The BSCE received its Certificate of Program Compliance and level I AACCUP accreditation in 2016 and level II in 2019.
-         </a>
-       </ul>
+    <div class="main-content p-4">
+        <h2 class="text-xl font-bold mb-4">The PRMSU College of Engineering through the years...</h2>
+        <img alt="The Science and Engineering Laboratory Building (SELB)" height="400" src="https://i.ibb.co/Pj8pqYJ/image-2024-11-24-133002017.png" width="1500" class="w-full mb-4"/>
+        <p class="mb-4">The Science and Engineering Laboratory Building (SELB)</p>
     </div>
-    <div class="department">
-        <h3>
-            <ul>
-            BACHELOR OF SCIENCE IN COMPUTER ENGINEERING
-             </a>
-           </ul>
-           </h3>
-           <ul>
-            The Bachelor of Science in Computer Engineering in President Ramon Magsaysay State University began in the 2nd Semester of the Academic Year 2002-2003 when the then Ramon Magsaysay Technological University (RMTU) Board of Regents (BOR) approved the offering of self-liquidating degree programs in evening classes. The degree program was officially opened in the Academic Year 2003-2004 under the Institute of Evening Opportunity Program (then headed by Engr. Jovelyn M. Barro as the first Program Chair). The first batch graduated in 2007.
-             </a>
-           </ul>
-           <ul>
-            In 2009, Engr. Melchor B. Manansala was designated as the Program Chair. In 2012, Engr. Ricky S. Barrera assumed the Chairmanship of the program until 2017 which was then designated to Engr. Delosillo A. Martin, Jr. to present.
-             </a>
-           </ul>
-           <ul>
-            Due to the increasing population of students, the program was offered in Morning and Evening Sessions in AY 2004-2005 under the College of Communications and Information Technology (CCIT) and later in 2012, the last batch of BSCP in the IOP graduated in 2012. From then on, the program was offered only in the CCIT. In 2018, in compliance with the recommendation of the Commission on Higher Education (CHED), the program was transferred under the College of Engineering (COE).
-             </a>
-           </ul>
+    <div class="departments p-4">
+        <div class="department mb-4">
+            <h3 class="text-lg font-semibold mb-2">BACHELOR OF SCIENCE IN CIVIL ENGINEERING</h3>
+            <ul class="list-disc pl-5">
+                <li class="mb-2">The Bachelor of Science in Civil Engineering Program was first proposed to be offered in Botolan Campus under the Self-Liquidating Program Scheme in early 2002 under the leadership of President Rolando R. Rosete. The RMTU Board of Regents approved the proposal in early 2003 but only as back subjects in the summer as the issue on the status of facilities and faculty to handle the program in Botolan Campus. The BSCE program started in the first semester of the school year 2003-2004, under the Institute of Evening Opportunity Programs with Prof. Cecilia A. Santiago as the dean and the close coordination with Engr. Liza M. Almenia, the dean of the College of Engineering and Architecture.</li>
+                <li class="mb-2">BSCE had its first batch graduate in March 2008 with seventy percent passing rate in the board examination. In 2010, the Board of Regents and the DBM approved its transfer to CEA as one of the RMTU regular programs. The BSCE received its Certificate of Program Compliance and level I AACCUP accreditation in 2016 and level II in 2019.</li>
+            </ul>
+        </div>
+        <div class="department mb-4">
+            <h3 class="text-lg font-semibold mb-2">BACHELOR OF SCIENCE IN COMPUTER ENGINEERING</h3>
+            <ul class="list-disc pl-5">
+                <li class="mb-2">The Bachelor of Science in Computer Engineering in President Ramon Magsaysay State University began in the 2nd Semester of the Academic Year 2002-2003 when the then Ramon Magsaysay Technological University (RMTU) Board of Regents (BOR) approved the offering of self-liquidating degree programs in evening classes. The degree program was officially opened in the Academic Year 2003-2004 under the Institute of Evening Opportunity Program (then headed by Engr. Jovelyn M. Barro as the first Program Chair). The first batch graduated in 2007.</li>
+                <li class="mb-2">In 2009, Engr. Melchor B. Manansala was designated as the Program Chair. In 2012, Engr. Ricky S. Barrera assumed the Chairmanship of the program until 2017 which was then designated to Engr. Delosillo A. Martin, Jr. to present.</li>
+                <li class="mb-2">Due to the increasing population of students, the program was offered in Morning and Evening Sessions in AY 2004-2005 under the College of Communications and Information Technology (CCIT) and later in 2012, the last batch of BSCP in the IOP graduated in 2012. From then on, the program was offered only in the CCIT. In 2018, in compliance with the recommendation of the Commission on Higher Education (CHED), the program was transferred under the College of Engineering (COE).</li>
+            </ul>
+        </div>
+        <div class="department mb-4">
+            <h3 class="text-lg font-semibold mb-2">BACHELOR OF SCIENCE IN ELECTRICAL ENGINEERING</h3>
+            <ul class="list-disc pl-5">
+                <li class="mb-2">The Bachelor of Science in Electrical Engineering in the President Ramon Magsaysay State University began when the RMTU Board of Regents approved the curricula leading to the degrees of Bachelor of Science and Master of Science in Electrical Engineering. The degree program was officially opened, and the Department was first headed by Engr. Simon Jaring. The Department graduated its first batch of students in 2001, as one of oldest program in the College.</li>
+            </ul>
+        </div>
+        <div class="department mb-4">
+            <h3 class="text-lg font-semibold mb-2">BACHELOR OF SCIENCE IN MECHANICAL ENGINEERING</h3>
+            <ul class="list-disc pl-5">
+                <li class="mb-2">The Bachelor of Science in Mechanical Engineering in President Ramon Magsaysay State University began when the RMTU Board of Regents approved the curricula leading to the degrees of Bachelor of Science and Master of Science in Mechanical Engineering. The degree program was officially opened and the department was first headed by Engr. Noel M. Divina. The department graduated its first batch of students in 2001, as one of oldest programs in the College.</li>
+            </ul>
+        </div>
     </div>
-    <div class="department">
-        <h3>
-            <ul>
-            BACHELOR OF SCIENCE IN ELECTRICAL ENGINEERING
-             </a>
-           </ul>
-           </h3>
-           <ul>
-            The Bachelor of Science in Electrical Engineering in the President Ramon Magsaysay State University began when the RMTU Board of Regents approved the curricula leading to the degrees of Bachelor of Science and Master of Science in Electrical Engineering. The degree program was officially opened, and the Department was first headed by Engr. Simon Jaring. The Department graduated its first batch of students in 2001, as one of oldest program in the College.
-             </a>
-           </ul>
-    </div>
-    <div class="department">
-        <h3>
-            <ul>
-            BACHELOR OF SCIENCE IN MECHANICAL ENGINEERING
-             </a>
-           </ul>
-           </h3>
-           <ul>
-            The Bachelor of Science in Mechanical Engineering in President Ramon Magsaysay State University began when the RMTU Board of Regents approved the curricula leading to the degrees of Bachelor of Science and Master of Science in Mechanical Engineering. The degree program was officially opened and the department was first headed by Engr. Noel M. Divina. The department graduated its first batch of students in 2001, as one of oldest programs in the College.
-             </a>
-           </ul>
-    </div>
-   </div>
-    <img alt="The COE faculty and students" height="300" src="https://i.ibb.co/WDxrMML/008-UNI-Faculty-with-PRNV.png" width="1500"/>
-</div>
-    <div class="footer">
+    <img alt="The COE faculty and students" height="300" src="https://i.ibb.co/WDxrMML/008-UNI-Faculty-with-PRNV.png" width="1500" class="w-full mb-4"/>
+    <div class="footer bg-white text-center py-4">
         PRMSU College of Engineering © 2023
-       </div>
-      </body>
+    </div>
+</body>
+</html>
      </html>
  
