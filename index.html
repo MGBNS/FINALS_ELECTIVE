@@ -19,39 +19,40 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 font-sans">
-    <div class="bg-orange-500 text-white p-4 text-center">
-        <img alt="Logo of President Ramon Magsaysay State University" class="inline-block align-middle" height="50" src="https://i.ibb.co/S674BPg/images.jpg" width="50"/>
-        <h1 class="inline-block text-2xl align-middle ml-2">President Ramon Magsaysay State University</h1>
+<body class="bg-gray-100">
+    <div class="header bg-orange-500 text-white text-center py-4">
+        <img alt="Logo" height="50" src="https://i.ibb.co/S674BPg/images.jpg" width="50" class="inline-block"/>
+        <h1 class="inline-block text-2xl">President Ramon Magsaysay State University</h1>
     </div>
-    <div class="bg-black text-white">
-        <div class="container mx-auto flex flex-wrap items-center justify-between p-4">
-            <div class="flex flex-wrap items-center">
-                <a href="index.html" class="block px-4 py-2">Home</a>
-                <div class="relative group">
-                    <button class="dropbtn block px-4 py-2">Instruction <i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-content absolute hidden bg-black text-white group-hover:block">
-                        <a href="Curricular-Offerings.html" class="block px-4 py-2">Curricular Offerings</a>
-                        <a href="Faculty.html" class="block px-4 py-2">Faculty</a>
-                    </div>
-                </div>
-                <div class="relative group">
-                    <button class="dropbtn block px-4 py-2">Research <i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-content absolute hidden bg-black text-white group-hover:block">
-                        <a href="BSCE.html" class="block px-4 py-2">BSCE Researches</a>
-                        <a href="BSCpE.html" class="block px-4 py-2">BSCpE Researches</a>
-                        <a href="BSEE.html" class="block px-4 py-2">BSEE Researches</a>
-                        <a href="BSME.html" class="block px-4 py-2">BSME Researches</a>
-                    </div>
-                </div>
-                <a href="Extension.html" class="block px-4 py-2">Extension</a>
-                <a href="History.html" class="block px-4 py-2">History</a>
+    <div class="navbar bg-black text-white flex flex-wrap">
+        <a href="index.html" class="block py-4 px-6 hover:bg-gray-300 hover:text-black">Home</a>
+        <div class="dropdown inline-block relative">
+            <button class="dropbtn py-4 px-6 hover:bg-gray-300 hover:text-black">Instruction 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content absolute hidden bg-black text-white">
+                <a href="Curricular-Offerings.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">Curricular Offerings</a>
+                <a href="Faculty.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">Faculty</a>
             </div>
-            <div class="search-container flex items-center">
-                <input type="text" placeholder="Search.." class="p-2 rounded border border-gray-300"/>
-                <button type="submit" class="p-2 bg-white rounded"><i class="fa fa-search"></i></button>
+        </div> 
+        <div class="dropdown inline-block relative">
+            <button class="dropbtn py-4 px-6 hover:bg-gray-300 hover:text-black">Research 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content absolute hidden bg-black text-white">
+                <a href="BSCE.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">BSCE Researches</a>
+                <a href="BSCpE.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">BSCpE Researches</a>
+                <a href="BSEE.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">BSEE Researches</a>
+                <a href="BSME.html" class="block py-2 px-4 hover:bg-gray-300 hover:text-black">BSME Researches</a>
             </div>
+        </div> 
+        <a href="Extension.html" class="block py-4 px-6 hover:bg-gray-300 hover:text-black">Extension</a>
+        <a href="History.html" class="block py-4 px-6 hover:bg-gray-300 hover:text-black">History</a>
+        <div class="search-container ml-auto py-4 px-6">
+            <input type="text" placeholder="Search.." class="p-2 border border-gray-300 rounded">
+            <button type="submit" class="p-2 bg-white border border-gray-300 rounded hover:bg-gray-300"><i class="fa fa-search"></i></button>
         </div>
+    </div>
     </div>
     <div class="banner">
         <img alt="Front view of the College Building" class="w-full h-auto" src="https://i.ibb.co/YpJT2w8/home-1.png"/>
